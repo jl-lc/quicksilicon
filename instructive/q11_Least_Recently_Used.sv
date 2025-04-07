@@ -192,8 +192,8 @@ module lru #(
       if (mem_valid[way] == 1'b0)
         idx_next = way[NUM_WAYS_LG2-1:0];
     end
-    idx = idx_next;
   end
+  assign idx = idx_next;
 
   // one-hot invalid tag index
   always_comb begin : one_hot_valid_tag
