@@ -24,7 +24,7 @@ module lru #(
   //        lru 
   //    outputs lru_valid_o if store is valid
   //    outputs lru_way_o which cache way it's stored in, IN SAME CYCLE
-  // invalid op:
+  // invalidate op:
   //    invalidates cache in ls_way_i (empties it)
   // load op:
   //    essentially updates order of recently used since no data involved in this module
